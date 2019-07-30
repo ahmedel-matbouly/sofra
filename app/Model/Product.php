@@ -18,7 +18,7 @@ class Product extends Model
 
     public function resturants()
     {
-        return $this->belongsTo('App\Model\Resturant');
+        return $this->belongsTo('App\Model\Resturant', 'resturant_id');
     }
 
 }

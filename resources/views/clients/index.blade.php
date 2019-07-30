@@ -67,7 +67,7 @@
                               </td> 
                                 <td class="text-center">{{$record->phone}}</td>
                                
-                                <td class="text-center">{{$record->city_id}}</td>
+                                <td class="text-center">{{$record->cities->name}}</td>
                                 <td class="text-center">
                                   @if($record->activated )
                                       <a href="clients/{{$record->id}}/deactivated" class="btn btn-xs btn-danger"><i class="fa fa-close"></i> إيقاف</a>

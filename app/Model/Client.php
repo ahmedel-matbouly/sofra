@@ -13,7 +13,7 @@ class Client extends Model
 
     public function cities()
     {
-        return $this->belongsTo('App\Model\City');
+        return $this->belongsTo('App\Model\City', 'city_id');
     }
 
     public function orders()

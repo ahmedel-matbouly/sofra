@@ -63,9 +63,9 @@
                                        <span class="label label-success">
                                          {{$role->name}}
                                        </span>
-                                   
+                                    @endforeach 
                                 </td>
-                                @endforeach  
+                                
                                 <td class="text-center"><a href="{{url(route('user.edit',$record->id))}}" class="btn btn-success"><i class="fa fa-edit"></i>Edit</a></td>
                                 <td class="text-center"> {!! Form::model($record,[
 

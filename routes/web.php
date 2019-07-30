@@ -53,6 +53,3 @@ Route::group(
         Route::post('forgtrpassword','AdminController@savePassword')->name('savepassword');
 
     });
-
-
-

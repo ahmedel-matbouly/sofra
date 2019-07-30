@@ -48,7 +48,7 @@
                                 <th class="text-center">price  </th>
                                 <th class="text-center">img</th>
                                 <th class="text-center">time </th>
-                                <th class="text-center">resturant_id </th>
+                                <th class="text-center">resturant </th>
                                 <th class="text-center">disable</th>                            
                                 <th class="text-center">Delete</th>
                             </tr>
@@ -64,7 +64,7 @@
                                   <img src="{{asset($record->img)}}" style="width:200px; height:100px"><i class="fa fa-edite btn-xs"></i>
                               </td> 
                                 <td class="text-center">{{$record->time }}</td>
-                                <td class="text-center">{{$record->resturant_id}}</td>
+                                <td class="text-center">{{$record->resturants->name}}</td>
                                 <td class="text-center">{{$record->disable}}</td>
                              
                                 <td class="text-center"> {!! Form::model($record,[

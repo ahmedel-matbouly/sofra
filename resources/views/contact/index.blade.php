@@ -48,7 +48,7 @@
                                 <th class="text-center">phone</th>
                                 <th class="text-center">type</th>
                                 <th class="text-center">contactable_type</th>
-                                <th class="text-center">contactable_id</th>
+                                <th class="text-center">contactable</th>
                              
                                 <th class="text-center">Delete</th>
                             </tr>
@@ -62,7 +62,7 @@
                                 <td class="text-center">{{$record->phone}}</td>
                                 <td class="text-center">{{$record->type}}</td>
                                 <td class="text-center">{{$record->contactable_type}}</td>
-                                <td class="text-center">{{$record->contactable_id}}</td>
+                                <td class="text-center">{{$record->contactable->name}}</td>
                               
                                 <td class="text-center"> {!! Form::model($record,[
 
